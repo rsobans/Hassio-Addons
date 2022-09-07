@@ -121,6 +121,7 @@ fi
 
 mkdir -p /data/EAPController/data
 mkdir -p /data/EAPController/logs
+mkdir -p /data/EAPController/data/db
 chown -R omada:omada /data
 chown -R omada:omada /opt/tplink/EAPController/data/keystore
 
