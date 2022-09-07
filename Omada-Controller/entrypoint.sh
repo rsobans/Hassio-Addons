@@ -119,7 +119,7 @@ then
   set_port_property portal.https.port 8843 "${PORTAL_HTTPS_PORT}"
 fi
 
-mkdir -p /data/EAPController
+mkdir -p /data/EAPController/data
 chown -R omada:omada /data
 
 # make sure that the html directory exists
