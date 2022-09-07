@@ -1,6 +1,6 @@
 {
     "name": "Omada Controller",
-    "version": "0.1.3",
+    "version": "0.1.4",
     "slug": "omada_controller",
     "description": "TP-Link Omada Controller software for managing WAPs",
     "url": "https://github.com/batas/Hassio-Addons",
@@ -23,8 +23,8 @@
         "29812/udp": 29812,
         "29813/tcp": 29813,
         "29813/udp": 29813,
-        "29813/tcp": 29814,
-        "29813/udp": 29814
+        "29814/tcp": 29814,
+        "29814/udp": 29814
     },
     "ports_description": {
         "8088/tcp": "Used for Omada Controller interface and API",
