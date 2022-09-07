@@ -122,6 +122,7 @@ fi
 mkdir -p /data/EAPController/data
 mkdir -p /data/EAPController/logs
 chown -R omada:omada /data
+chown -R omada:omada /opt/tplink/EAPController/data/keystore
 
 # make sure that the html directory exists
 if [ ! -d "/data/EAPController/data/html" ] && [ -f "/data/EAPController/data-html.tar.gz" ]
@@ -166,7 +167,7 @@ fi
 # check to see if there is a db directory; create it if it is missing
 if [ ! -d "/data/EAPController/data/db" ]
 then
-  echo "INFO: Database directory missing; creating '/opt/tplink/EAPController/data/db'"
+  echo "INFO: Database directory missing; creating '/data/EAPController/data/db'"
   mkdir /data/EAPController/data/db
   chown omada:omada /data/EAPController/data/db
   echo "done"
