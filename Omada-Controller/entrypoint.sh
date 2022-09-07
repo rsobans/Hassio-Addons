@@ -150,7 +150,7 @@ do
   if [ "${OWNER}" != "${PUID}" ] || [ "${GROUP}" != "${PGID}" ]
   then
     # notify user that uid:gid are not correct and fix them
-    echo "WARN: Ownership not set correctly on '/opt/tplink/EAPController/${DIR}'; setting correct ownership (omada:omada)"
+    echo "WARN: Ownership not set correctly on '/data/EAPController/${DIR}'; setting correct ownership (omada:omada)"
     chown -R omada:omada "/data/EAPController/${DIR}"
   fi
 done
