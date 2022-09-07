@@ -120,6 +120,7 @@ then
 fi
 
 mkdir -p /data/EAPController/data
+mkdir -p /data/EAPController/logs
 chown -R omada:omada /data
 
 # make sure that the html directory exists
