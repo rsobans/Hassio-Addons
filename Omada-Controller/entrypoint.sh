@@ -284,13 +284,13 @@ echo "INFO: Starting Omada Controller as user omada"
 # tail the omada logs if set to true
 if [ "${SHOW_SERVER_LOGS}" = "true" ]
 then
-  gosu omada tail -F -n 0 /opt/tplink/EAPController/logs/server.log &
+  gosu omada tail -F -n 0 /data/EAPController/logs/server.log &
 fi
 
 # tail the mongodb logs if set to true
 if [ "${SHOW_MONGODB_LOGS}" = "true" ]
 then
-  gosu omada tail -F -n 0 /opt/tplink/EAPController/logs/mongod.log &
+  gosu omada tail -F -n 0 /data/EAPController/logs/mongod.log &
 fi
 
 # run the actual command as the omada user
