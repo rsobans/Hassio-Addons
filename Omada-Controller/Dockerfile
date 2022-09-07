@@ -5,7 +5,7 @@ HEALTHCHECK CMD wget --quiet --tries=1 --no-check-certificate http://127.0.0.1:8
 #COPY install.sh healthcheck.sh entrypoint.sh /
 COPY install.sh entrypoint.sh /
 
-#RUN chmod +x /*.sh
+RUN chmod +x /*.sh
 
 # Copy configuration properties
 # COPY omada.properties log4j2.properties /opt/tplink/EAPController/properties/
