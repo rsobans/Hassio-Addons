@@ -4,8 +4,8 @@ set -e
 
 OMADA_DIR="/data/omada_controller"
 ARCH="${ARCH:-}"
-OMADA_VER="${OMADA_VER:-}"
-OMADA_TAR="${OMADA_TAR:-}"
+OMADA_VER="5.15.6.7"
+OMADA_TAR="Omada_SDN_Controller_v5.15.6.7_linux_x64_20241128140035.tar.gz"
 OMADA_URL="https://static.tp-link.com/upload/software/2024/202412/20241205/Omada_SDN_Controller_v5.15.6.7_linux_x64_20241128140035.tar.gz"
 
 die() { echo -e "$@" 2>&1; exit 1; }
