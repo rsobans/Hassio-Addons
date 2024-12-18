@@ -50,14 +50,14 @@ tar zxvf "${OMADA_TAR}"
 rm -f "${OMADA_TAR}"
 cd Omada_SDN_Controller_*
 mkdir "${OMADA_DIR}" -vp
-cp bin "${OMADA_DIR}" -r
-cp data "${OMADA_DIR}" -r
-cp properties "${OMADA_DIR}" -r
-cp webapps "${OMADA_DIR}" -r
-cp keystore "${OMADA_DIR}" -r
-cp lib "${OMADA_DIR}" -r
-cp install.sh "${OMADA_DIR}" -r
-cp uninstall.sh "${OMADA_DIR}" -r
+cp * "${OMADA_DIR}" -r
+#cp data "${OMADA_DIR}" -r
+#cp properties "${OMADA_DIR}" -r
+#cp webapps "${OMADA_DIR}" -r
+#cp keystore "${OMADA_DIR}" -r
+#cp lib "${OMADA_DIR}" -r
+#cp install.sh "${OMADA_DIR}" -r
+#cp uninstall.sh "${OMADA_DIR}" -r
 ln -sf "$(which mongod)" "${OMADA_DIR}/bin/mongod"
 chmod 755 "${OMADA_DIR}"/bin/*
 
