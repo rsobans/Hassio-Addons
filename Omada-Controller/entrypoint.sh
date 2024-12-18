@@ -15,7 +15,7 @@ SHOW_MONGODB_LOGS="${SHOW_MONGODB_LOGS:-false}"
 SSL_CERT_NAME="${SSL_CERT_NAME:-tls.crt}"
 SSL_KEY_NAME="${SSL_KEY_NAME:-tls.key}"
 
-./install.sh
+/install.sh
 
 # set default time zone and notify user of time zone
 echo "INFO: Time zone set to '${TZ}'"
