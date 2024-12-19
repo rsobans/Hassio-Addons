@@ -15,6 +15,7 @@ PKGS=(
   gosu
   net-tools
   openjdk-8-jre-headless
+  jsvc
   tzdata
   wget
 )
