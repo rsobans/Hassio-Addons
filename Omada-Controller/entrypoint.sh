@@ -2,6 +2,8 @@
 
 set -e
 
+
+OMADA_DIR="/data/omada_controller"
 # set environment variables
 export TZ
 TZ="${TZ:-Etc/UTC}"
