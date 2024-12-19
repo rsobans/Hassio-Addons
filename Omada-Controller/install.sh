@@ -49,8 +49,9 @@ echo "**** Extract and Install Omada Controller ****"
 tar zxvf "${OMADA_TAR}"
 rm -f "${OMADA_TAR}"
 cd Omada_SDN_Controller_*
-mkdir "${OMADA_DIR}" -vp
-cp * "${OMADA_DIR}" -r
+yes | install.sh
+#mkdir "${OMADA_DIR}" -vp
+#cp * "${OMADA_DIR}" -r
 #cp data "${OMADA_DIR}" -r
 #cp properties "${OMADA_DIR}" -r
 #cp webapps "${OMADA_DIR}" -r
@@ -58,7 +59,7 @@ cp * "${OMADA_DIR}" -r
 #cp lib "${OMADA_DIR}" -r
 #cp install.sh "${OMADA_DIR}" -r
 #cp uninstall.sh "${OMADA_DIR}" -r
-ln -sf "$(which mongod)" "${OMADA_DIR}/bin/mongod"
+#ln -sf "$(which mongod)" "${OMADA_DIR}/bin/mongod"
 chmod 755 "${OMADA_DIR}"/bin/*
 
 echo "**** Setup omada User Account ****"
