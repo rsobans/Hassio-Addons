@@ -17,6 +17,7 @@ PKGS=(
   openjdk-8-jre-headless
   jsvc
   tzdata
+  curl
   wget
 )
 
