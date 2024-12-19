@@ -23,7 +23,7 @@ groupadd -g 508 omada
 useradd -u 508 -g 508 -d "${OMADA_DIR}" omada
 #mkdir "${OMADA_DIR}/logs" 
 #mkdir "${OMADA_DIR}/work"
-chown -R omada:omada "${OMADA_DIR}/data" "${OMADA_DIR}/logs" "${OMADA_DIR}/work"
+#chown -R omada:omada "${OMADA_DIR}/data" "${OMADA_DIR}/logs" "${OMADA_DIR}/work"
 
 
 # set default time zone and notify user of time zone
