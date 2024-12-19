@@ -16,7 +16,13 @@ SSL_CERT_NAME="${SSL_CERT_NAME:-tls.crt}"
 SSL_KEY_NAME="${SSL_KEY_NAME:-tls.key}"
 
 ls
-/install.sh
+echo "**** Setup omada User Account ****"
+groupadd -g 508 omada
+useradd -u 508 -g 508 -d "${OMADA_DIR}" omada
+#mkdir "${OMADA_DIR}/logs" 
+#mkdir "${OMADA_DIR}/work"
+chown -R omada:omada "${OMADA_DIR}/data" "${OMADA_DIR}/logs" "${OMADA_DIR}/work"
+
 
 # set default time zone and notify user of time zone
 echo "INFO: Time zone set to '${TZ}'"
