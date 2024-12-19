@@ -49,7 +49,7 @@ echo "**** Extract and Install Omada Controller ****"
 tar zxvf "${OMADA_TAR}"
 rm -f "${OMADA_TAR}"
 cd Omada_SDN_Controller_*
-yes | install.sh
+yes | ./install.sh
 #mkdir "${OMADA_DIR}" -vp
 #cp * "${OMADA_DIR}" -r
 #cp data "${OMADA_DIR}" -r
