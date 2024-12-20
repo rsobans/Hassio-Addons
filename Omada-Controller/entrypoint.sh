@@ -83,6 +83,10 @@ then
   echo "INFO: Skipping setting smallfiles option"
 fi
 
+
+  chown -R omada:omada /data/EAPController/properties/omada.properties
+
+
 set_port_property() {
   # check to see if we are trying to bind to privileged port
   if [ "${3}" -lt "1024" ] && [ "$(cat /proc/sys/net/ipv4/ip_unprivileged_port_start)" = "1024" ]
