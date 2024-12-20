@@ -84,8 +84,7 @@ then
 fi
 
 
-  chown -R omada:omada /data/EAPController/properties/omada.properties
-
+  chown -R omada:omada /opt/tplink/EAPController/properties/omada.properties
 
 set_port_property() {
   # check to see if we are trying to bind to privileged port
