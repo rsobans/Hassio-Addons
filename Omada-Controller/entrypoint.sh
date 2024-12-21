@@ -299,4 +299,5 @@ then
 fi
 
 # run the actual command as the omada user
+echo "${@}"
 exec gosu omada "${@}"
